@@ -1,0 +1,12 @@
+*.jpg
+*.png
+*.gif
+img/
+
+pdf/
+media/
+config.php
+*.zip
+.user.ini
+.htaccess
+__MACOSX/
