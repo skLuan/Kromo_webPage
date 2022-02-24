@@ -14,8 +14,7 @@ require 'phpmailer/src/PHPMailer.php';
 $recipients = array();
 
 $recipients[] = array(
-	'email' => 'erazo.luan@gmail.com',
-	// 'email' => 'kromocons@gmail.com',
+	'email' => 'kromocons@gmail.com',
 	'name' => 'Kromo General',
 	'xime' => 'ximena.arnedo@kromo.com.co',
 	'xime_name' => 'Ximena',
@@ -44,7 +43,7 @@ $sender = array(
 
 
 // reCaptcha Secret Key - Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = '';
+$recaptcha_secret = '6LdXy5keAAAAAF9hG0MmJyuIigNGkVNS-9NfZ7GN';
 
 
 // PHPMailer Initialization

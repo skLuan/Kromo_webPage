@@ -12,5 +12,5 @@ function submitUserForm() {
 
 function verifyCaptcha(token) {
     const recaptcha_response = token;
-    document.getElementById("g-recaptcha-error").innerHTML = recaptcha_response;
+    document.getElementById("g-recaptcha-error").innerHTML = "";
 }

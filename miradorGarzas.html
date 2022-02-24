@@ -196,7 +196,7 @@
       </div>
     </header>
     <main>
-      <a href="#cf-up" class="more">Contáctanos</a>
+      <button onclick=" popUpToggle(event);" class="btn more">Contáctanos</button>
       <div class="container container-padding">
         <div class="row">
           <div class="col-md-5 col-lg-5">
@@ -258,7 +258,8 @@
           </div>
           <div class="listing-block__grid">
             <hr>
-            <article class="review-slider__text">Este proyecto de vivienda SIS contará con 460 apartamentos divididos en 11 torres cada
+            <article class="review-slider__text">Este proyecto de vivienda SIS contará con 460 apartamentos divididos en
+              11 torres cada
               una de
               5 pisos con 8 apartamentos por piso para un total de 40 unidades de vivienda,
               con excepción de la torre número 5 que contará con 5 pisos con 4
@@ -286,7 +287,8 @@
               <div class="col-12 col-md-12 col-sm-12">
                 <!-- ----------------------------------------------------------------Amenities -->
                 <div class="amenities">
-                  <article class="review-slider__text">Mirador de las garzas cuenta con: Salón social con baño para hombres,
+                  <article class="review-slider__text">Mirador de las garzas cuenta con: Salón social con baño para
+                    hombres,
                     baño para
                     mujeres, baño discapcitados, depósito y cocineta, Juegos infantiles,
                     parqueaderos para residentes y visitantes;
@@ -384,89 +386,10 @@
           <div class="row">
             <div class="col-ms-12 col-lg-10">
               <div id="cf-up" class="heading-group__title mb-0">Contáctenos</div>
-              <div class="contact-form">
-                <form class="contact-block__form mt-5 mb-0" id="cf" name="cf" action="include/sendemail.php"
-                  method="post" autocomplete="off">
-                  <div class="form-row">
-
-                    <div class="form-process"></div>
-
-                    <input id="cf-proyecto" name="cf-proyecto" value="Mirador de las garzas"
-                      class="col-12 col-sm-6 contact-block__input-text form-control required d-none"
-                      placeholder="Asunto" type="text" />
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="cf-nombre">Nombre</label>
-                        <input type="text" id="cf-nombre" name="cf-nombre" placeholder="Coloca tu nombre"
-                          class="contact-block__input-text form-control required">
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="cf-email">E-mail</label>
-                        <input type="email" id="cf-email" name="cf-email" placeholder="Coloca tu email"
-                          class="contact-block__input-text form-control required">
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="cf-tema">Asunto</label>
-                        <input type="text" id="cf-tema" name="cf-tema" placeholder="Tema (Opcional)"
-                          class="contact-block__input-text form-control">
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="cf-tel">No de teléfono</label>
-                        <input type="tel" id="cf-tel" name="cf-tel" placeholder="Teléfono (Opcional)"
-                          class="contact-block__input-text form-control">
-                      </div>
-                    </div>
-
-                    <div class="col-12 mb-4">
-                      <div class="form-group">
-                        <label for="cf-mensaje">Su mensaje</label>
-                        <textarea name="cf-message" id="cf-message"
-                          placeholder="¡Déjanos tu mensaje y en breve estaremos en contacto contigo!"
-                          class="contact-block__input-textarea form-control required" rows="7"></textarea>
-                      </div>
-                    </div>
-
-                    <div class="col-12 d-none">
-                      <input type="text" id="cf-botcheck" name="cf-botcheck" value="" class="form-control" />
-                    </div>
-
-                    <div class="col-mb-6">
-                      <label for="terms">¿Acepta y Autoriza a Kromo Constructores el envio de
-                        Información?
-                      </label>
-                      <br />
-                      <input type="radio" name="terms" /> Sí
-                      <input type="radio" class="ml-3" name="terms" /> No
-                      <br />
-                      <div class="d-flex flex-column mt-3 contact-block__text">
-                        <a href="http://kromo.com.co/PPD.pdf">POLÍTICA DE PROTECCIÓN DE DATOS</a>
-                        <a href="http://kromo.com.co/PGI.pdf">POLÍTICA DE PROTECCIÓN DE GESTIÓN INTEGRAL</a>
-                      </div>
-                    </div>
-
-                    <div class="contact-form-result text-center"></div>
-                    <div class="col-12 text-center text-lg-left">
-                      <button class="contact-block__submit mt-0 mb-5" type="submit" id="cf-submit"
-                        name="cf-submit">Enviar mensaje</button>
-                    </div>
-
-                    <input type="hidden" name="prefix" value="cf-">
-
-                  </div>
-                </form>
+              <div id="staticFormContainer" class="contact-form" name="Mirador de las Garzas">
               </div>
             </div>
-
+            <!-- --------------se inyecta de forma dinamica el form -->
 
           </div>
           <!-----------------------------------------------------------------------------------------  -->
@@ -476,89 +399,22 @@
       </div>
     </main>
 
-            <!-- ------------------------------------------------------- Form Pop up -->
-        <!-- ------------------------------------------------------- Form Pop up -->
-        <div id="Formpopup">
-          <div class="d-flex justify-content-between align-items-center">
-            <h3 id="cf-up" class="heading-group__title mb-0">Contáctenos</h3>
-            <button class="close_button_form" onclick="popUpToggle(event);">
-              <i class="icon-cross"></i>
-            </button>
-        </div>
-          <div class="contact-form">
-            <form class="contact-block__form mt-0 mb-0" id="cf" name="cf" action="include/sendemail.php" method="post"
-              autocomplete="off">
-              <div class="form-row flex-column">
-    
-                <div class="form-process"></div>
-    
-                <input id="cf-proyecto" name="cf-proyecto" value="Mirador de las garzas"
-                  class="col-12 col-sm-6 contact-block__input-text form-control required d-none" placeholder="Asunto"
-                  type="text" />
-    
-                <div class="form-group  mb-0">
-                  <label class="mb-0" for="cf-nombre">Nombre</label>
-                  <input type="text" id="cf-nombre" name="cf-nombre" placeholder="Coloca tu nombre"
-                    class="contact-block__input-text form-control required mb-3">
-                </div>
-    
-                <div class="form-group  mb-0">
-                  <label class="mb-0" for="cf-email">E-mail</label>
-                  <input type="email" id="cf-email" name="cf-email" placeholder="Coloca tu email"
-                    class="contact-block__input-text form-control required mb-3">
-                </div>
-    
-                <div class="form-group d-none">
-                  <label class="mb-0" for="cf-tema">Asunto</label>
-                  <input type="text" id="cf-tema" name="cf-tema" placeholder="Tema (Opcional)"
-                    class="contact-block__input-text form-control mb-3">
-                </div>
-    
-                <div class="form-group mb-0">
-                  <label class="mb-0" for="cf-tel">No de teléfono</label>
-                  <input type="tel" id="cf-tel" name="cf-tel" placeholder="Teléfono (Opcional)"
-                    class="contact-block__input-text form-control mb-3">
-                </div>
-    
-                <div class="form-group d-none">
-                  <label class="mb-0" for="cf-mensaje">Su mensaje</label>
-                  <textarea name="cf-message" id="cf-message"
-                    placeholder="¡Déjanos tu mensaje y en breve estaremos en contacto contigo!"
-                    class="contact-block__input-textarea form-control required"
-                    rows="2">Estoy interezado en el proyecto</textarea>
-                </div>
-    
-                <div class="form-group d-none">
-                  <input type="text" id="cf-botcheck" name="cf-botcheck" value="" class="form-control" />
-                </div>
-    
-                <div class="d-flex flex-column mt-2 mb-3 contact-block__text">
-                  <a href="http://kromo.com.co/PPD.pdf">POLÍTICA DE PROTECCIÓN DE DATOS</a>
-                  <a href="http://kromo.com.co/PGI.pdf">POLÍTICA DE PROTECCIÓN DE GESTIÓN INTEGRAL</a>
-                </div>
-                <label class="mb-0" for="terms">¿Acepta y Autoriza a Kromo Constructores el envio de
-                  Información?
-                </label>
-                <div>
-                  <input type="radio" name="terms" /> Sí
-                  <input type="radio" class="ml-3" name="terms" /> No
-                </div>
-                <div class="contact-form-result text-center"></div>
-                <div class="text-center">
-                  <button class="contact-block__submit mt-3 mb-2" type="submit" id="cf-submit" name="cf-submit">Enviar
-                    mensaje</button>
-                </div>
-    
-                <input type="hidden" name="prefix" value="cf-">
-    
-    
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- ------------------------------------------------------- End Form Pop up -->
-        <!-- ------------------------------------------------------- End Form Pop up -->
-        
+    <!-- ------------------------------------------------------- Form Pop up -->
+    <!-- ------------------------------------------------------- Form Pop up -->
+    <div id="Formpopup">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3 id="cf-up" class="heading-group__title mb-0">Contáctenos</h3>
+        <button class="close_button_form" onclick="popUpToggle(event);">
+          <i class="icon-cross"></i>
+        </button>
+      </div>
+      <div class="contact-form" id="popFormContainer">
+        <!-- ---se inyecta de forma idinamica el form -->
+      </div>
+    </div>
+    <!-- ------------------------------------------------------- End Form Pop up -->
+    <!-- ------------------------------------------------------- End Form Pop up -->
+
     <footer class="footer-studio footer">
       <div class="container-fluid">
         <div class="row">
@@ -642,6 +498,10 @@
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/vivus.min.js"></script>
   <!--  Form -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script type="module" src="src/mainRRModules.js"></script>
+  <script src="src/mainRR.js"></script>
+  <!-- ----------------------------------- -->
   <script src="assets/js/jquery-form/dist/jquery.form.min.js"></script>
   <script src="assets/js/jquery-validation/dist/jquery.validate.js"></script>
   <!-- Cierre form -->
@@ -664,7 +524,7 @@
 
   <!--Theme JS-->
   <script src="assets/js/theme.js"></script>
-  <script src="assets/js/funtionalities.js"></script>
+  <script src="src/funtionalities.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
