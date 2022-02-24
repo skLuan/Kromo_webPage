@@ -14,7 +14,8 @@ require 'phpmailer/src/PHPMailer.php';
 $recipients = array();
 
 $recipients[] = array(
-	'email' => 'kromocons@gmail.com',
+	'email' => 'erazo.luan@gmail.com',
+	// 'email' => 'kromocons@gmail.com',
 	'name' => 'Kromo General',
 	'xime' => 'ximena.arnedo@kromo.com.co',
 	'xime_name' => 'Ximena',
