@@ -58,11 +58,12 @@
   </div>
   <div class="page__inner animsition">
     <header class="header header_white header_fixed">
+    
+      <!-- --------------------------------Navbar Desktop -->
       <div class="header__container">
         <div class="header__wrapper container-fluid">
           <div class="header__inner">
-            <a class="logo header__logo" href="index.html"><img src="favicons/kromo-logo.png" alt="Logo"
-                width="50%"></a>
+            <a class="logo header__logo" href="index.html"><img src="favicons/kromo-logo.png" alt="Logo" width="50%"></a>
             <button class="header__menu-button" type="button">
               <span class="header__menu-button-inner"></span>
             </button>
@@ -70,7 +71,7 @@
         </div>
         <div class="header-full-page">
           <div class="container header-full-page__bottom">
-            <ul class="top-menu header-full-page__menu align-items-center">
+            <ul class="top-menu header-full-page__menu">
               <li class="top-menu__menu-item">
                 <div class="dropdown">
                   <a class="dropdown__trigger top-menu__menu-link" href="index.html">Inicio</a>
@@ -78,14 +79,14 @@
               </li>
               <li class="top-menu__menu-item">
                 <div class="dropdown">
-                  <a class="dropdown__trigger top-menu__menu-link" href="#">Proyectos</a>
+                  <a class="dropdown__trigger top-menu__menu-link" href="#proyectos">Proyectos</a>
                   <div class="dropdown__menu">
                     <div class="dropdown__column">
                       <div class="dropdown__item">
                         <a class="dropdown__link" href="realizados.html">Realizados</a>
                       </div>
                       <div class="dropdown__item">
-                        <a class="dropdown__link" href="proyectos-en-venta.html">Proyectos en venta</a>
+                        <a class="dropdown__link" href="proyectos-en-venta.html">Proyectos en Venta</a>
                       </div>
                       <div class="dropdown__item">
                         <a class="dropdown__link" href="construccion.html">En Construcción</a>
@@ -106,21 +107,40 @@
               </li>
               <li class="top-menu__menu-item">
                 <div class="dropdown">
+                  <a class="dropdown__trigger top-menu__menu-link" href="postVenta.html">Post venta</a>
+                </div>
+              </li>
+              <li class="top-menu__menu-item">
+                <div class="dropdown">
                   <a class="dropdown__trigger top-menu__menu-link" href="comprasExterior.html">Compras exterior</a>
                 </div>
               </li>
               <li class="top-menu__menu-item">
                 <div class="dropdown">
-                  <a class="dropdown__trigger top-menu__menu-link"
-                    href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">pagos <img
-                      src="img/logo-pse.png" width="35px" alt=""></a>
+                  <a class="dropdown__trigger top-menu__menu-link" href="">Pagos <img src="img/logo-pse.png" width="35px"
+                      alt=""></a>
+                  <div class="dropdown__menu">
+                    <div class="dropdown__column">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="https://www.alianzaenlinea.com.co/recaudos/login">Alianza en
+                          linea</a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link"
+                          href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">FiduBogotá</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <!-- ------------------------------------------------------- -->
       <div class="header__overlay"></div>
+    
+      <!-- --------------------------------Navbar mobile -->
       <div class="menu-panel header__menu">
         <div class="menu-panel__inner">
           <button class="header__menu-button header__menu-button_fixed" type="button">
@@ -142,7 +162,7 @@
                     <a class="menu-panel__submenu-link" href="realizados.html">Realizados</a>
                   </div>
                   <div class="menu-panel__submenu-item">
-                    <a class="menu-panel__submenu-link" href="proyectos-en-venta.html">Proyectos en venta</a>
+                    <a class="menu-panel__submenu-link" href="proyectos-en-venta.html">Proyectos en Venta</a>
                   </div>
                   <div class="menu-panel__submenu-item">
                     <a class="menu-panel__submenu-link" href="construccion.html">En Construcción</a>
@@ -151,8 +171,10 @@
               </div>
             </div>
             <div class="menu-panel__menu-item">
-              <a class="menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse"
-                href="empresa.html">Nuestra Empresa</a>
+              <a class="menu-panel__menu-link" data-toggle="collapse" href="empresa.html">Nuestra Empresa</a>
+            </div>
+            <div class="menu-panel__menu-item">
+              <a class="menu-panel__menu-link" data-toggle="collapse" href="blog.html">Blog</a>
             </div>
             <div class="menu-panel__menu-item">
               <a class="menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse"
@@ -160,12 +182,27 @@
             </div>
             <div class="menu-panel__menu-item">
               <a class="menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse"
+                href="postVenta.html">Post venta</a>
+            </div>
+            <div class="menu-panel__menu-item">
+              <a class="menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse"
                 href="comprasExterior.html">Compras Exterior</a>
             </div>
             <div class="menu-panel__menu-item">
-              <a class="menu-panel__menu-link menu-panel__menu-link_active"
-                href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">Pagos <img
-                  src="img/logo-pse.png" width="35px" alt="pse logo"></a>
+              <a class="menu-panel__menu-link collapsed" data-toggle="collapse" href="#submenu3">Pagos <img
+                  src="img/logo-pse.png" width="35px" alt=""></a>
+              <div class="menu-panel__menu-list collapse" id="submenu3">
+                <div class="menu-panel__bottom-submenu">
+                  <div class="menu-panel__submenu-item">
+                    <a class="dropdown__link" href="https://www.alianzaenlinea.com.co/recaudos/login">Alianza en
+                      linea</a>
+                  </div>
+                  <div class="menu-panel__submenu-item">
+                    <a class="dropdown__link"
+                      href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">FiduBogotá</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="menu-panel__footer">
@@ -178,8 +215,7 @@
                 target="_blank">
                 <div class="visually-hidden">facebook</div>
               </a>
-              <a class="socials__social icofont-youtube" href="https://www.youtube.com/watch?v=UZ9xfhHe-Eo"
-                target="_blank">
+              <a class="socials__social icofont-youtube" href="https://www.youtube.com/watch?v=UZ9xfhHe-Eo" target="_blank">
                 <div class="visually-hidden">youtube</div>
               </a>
             </div>
@@ -194,6 +230,8 @@
           </div>
         </div>
       </div>
+      <!-- ------------------------------------------------------- -->
+    
     </header>
     <main>
       <button onclick=" popUpToggle(event);" class="btn more">Contáctanos</button>
