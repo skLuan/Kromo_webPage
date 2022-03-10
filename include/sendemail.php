@@ -16,6 +16,8 @@ $recipients = array();
 $recipients[] = array(
 	'email' => 'kromocons@gmail.com',
 	'name' => 'Kromo General',
+	'mailColinas' => 'johana.murillo@colinascomfamar.com',
+	'nameColinas' => 'Johana murillo',
 	'xime' => 'ximena.arnedo@kromo.com.co',
 	'xime_name' => 'Ximena',
 	'angela' => 'angela.ausecha@kromo.com.co',
@@ -158,7 +160,10 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	} else if($submits['cf-proyecto'] == 'Caminos del Saman') {
 		$mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
 
-	} else if($submits['cf-proyecto'] == 'Benavente' || $submits['cf-proyecto'] == 'Valderas') {
+	} else if($submits['cf-proyecto'] == 'Colinas de Comfamar') {
+		$mail->AddAddress( $recipient['mailColinas'] , $recipient['nameColinas'] );
+	} 
+	else if($submits['cf-proyecto'] == 'Benavente' || $submits['cf-proyecto'] == 'Valderas') {
 		$mail->AddAddress( $recipient['comercial_uno'] , $recipient['comercial_name'] );
 		$mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
 	} else if($submits['cf-proyecto'] == 'Paseo de las Garzas') {
