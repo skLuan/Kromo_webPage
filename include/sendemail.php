@@ -24,6 +24,8 @@ $recipients[] = array(
 	'angela_name' => 'Angela',
 	'luz' => 'luz.ceron@kromo.com.co',
 	'luz_name' => 'Luz Ceron',
+	'karol' => 'karol.ceron@kromo.com.co',
+	'karol_name' => 'Karol Ceron',
 	'kevin' => 'kevin.buitron@kromo.com.co',
 	'kevin_name' => 'Kevin Buitron',
 	'laura' => 'Laura.mosquera@kromo.com.co',
@@ -32,6 +34,10 @@ $recipients[] = array(
 	'comercial_name' => 'Ejecutivo comercial',
 	'infoKromo' => 'info@kromo.com.co',
 	'infoKromo_name' => 'Info Kromo',
+	'asesorKromo1' => 'asesorcomercial1@kromo.com.co',
+	'asesorKromo1_name' => 'Asesor Comercial',
+	'asesorKromo2' => 'asesorcomercial@kromo.com.co',
+	'asesorKromo2_name' => 'Asesor Comercial',
 	
 		
 );
@@ -153,26 +159,40 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	
 	if($submits['cf-proyecto'] == 'Azure') {
 		$mail->AddAddress( $recipient['xime'], $recipient['xime_name'] );
+
+
 	} else if($submits['cf-proyecto'] == 'Guayacan' || $submits['cf-proyecto'] == 'Mirador de las garzas') {
-		$mail->AddAddress( $recipient['kevin'] , $recipient['kevin_name'] );
+		$mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
 		$mail->AddAddress( $recipient['laura'] , $recipient['laura_name'] );
 
+
 	} else if($submits['cf-proyecto'] == 'Caminos del Saman') {
-		$mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
+		$mail->AddAddress( $recipient['karol'] , $recipient['karol_name'] );
+		$mail->AddAddress( $recipient['asesorKromo2'] , $recipient['asesorKromo2_name'] );
+
 
 	} else if($submits['cf-proyecto'] == 'Colinas de Comfamar') {
 		$mail->AddAddress( $recipient['mailColinas'] , $recipient['nameColinas'] );
 	} 
+
+
 	else if($submits['cf-proyecto'] == 'Benavente' || $submits['cf-proyecto'] == 'Valderas') {
 		$mail->AddAddress( $recipient['comercial_uno'] , $recipient['comercial_name'] );
 		$mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
+
+
 	} else if($submits['cf-proyecto'] == 'Paseo de las Garzas') {
 		$mail->AddAddress( $recipient['luz'] , $recipient['luz_name'] );
+
+
 	} else if($submits['cf-proyecto'] == 'Gualanday') {
-		$mail->AddAddress( $recipient['angela'] , $recipient['angela_name'] );
+		$mail->AddAddress( $recipient['asesorKromo1'] , $recipient['asesorKromo1_name'] );
+
+
 	} else if($submits['cf-proyecto'] == 'Administrativo') {
 		$mail->AddAddress( $recipient['infoKromo'] , $recipient['infoKromo_name'] );
 	}
+
 
 	$unsets = array( 'prefix', 'subject', 'replyto', 'message', $prefix . 'botcheck', 'g-recaptcha-response', 'force_recaptcha', $prefix . 'submit' );
 
