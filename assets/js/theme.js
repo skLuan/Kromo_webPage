@@ -151,7 +151,7 @@
     loadingClass: 'animsition-loading2',
     loadingInner: "<div class=\"spinner\">\n        <div class=\"double-bounce1\"></div>\n      <div class=\"double-bounce2\"></div>\n      </div>",
     timeout: false,
-    timeoutCountdown: 5000,
+    timeoutCountdown: 2000,
     onLoadEvent: true,
     browser: ['animation-duration', '-webkit-animation-duration'],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.

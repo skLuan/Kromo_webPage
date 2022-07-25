@@ -25,6 +25,3 @@ try {
 } catch (error) {
   console.error('NO se encontraron formularios a los que agregar el contenedor');
 }
-console.log(formContainer.attributes);
-console.log(projectName);
-
