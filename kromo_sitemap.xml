@@ -1,29 +1,187 @@
-<?xml version='1.0' encoding='UTF-8'?><urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>https://kromo.com.co/</loc></url>
-<url><loc>https://kromo.com.co/Azure-construccion.html</loc></url>
-<url><loc>https://kromo.com.co/Azure.html</loc></url>
-<url><loc>https://kromo.com.co/Gualanday-construccion.html</loc></url>
-<url><loc>https://kromo.com.co/benavente.html</loc></url>
-<url><loc>https://kromo.com.co/bosque.html</loc></url>
-<url><loc>https://kromo.com.co/caminos-del-saman.html</loc></url>
-<url><loc>https://kromo.com.co/comfamar.html</loc></url>
-<url><loc>https://kromo.com.co/comprasExterior.html</loc></url>
-<url><loc>https://kromo.com.co/construccion.html</loc></url>
-<url><loc>https://kromo.com.co/contacto.html</loc></url>
-<url><loc>https://kromo.com.co/empresa.html</loc></url>
-<url><loc>https://kromo.com.co/gloria.html</loc></url>
-<url><loc>https://kromo.com.co/gualanday.html</loc></url>
-<url><loc>https://kromo.com.co/guayacan.html</loc></url>
-<url><loc>https://kromo.com.co/hacienda.html</loc></url>
-<url><loc>https://kromo.com.co/index.html</loc></url>
-<url><loc>https://kromo.com.co/manantial.html</loc></url>
-<url><loc>https://kromo.com.co/miradorGarzas.html</loc></url>
-<url><loc>https://kromo.com.co/parque.html</loc></url>
-<url><loc>https://kromo.com.co/paseo_de_las_garzas.html</loc></url>
-<url><loc>https://kromo.com.co/postVenta.html</loc></url>
-<url><loc>https://kromo.com.co/proyectos-en-venta.html</loc></url>
-<url><loc>https://kromo.com.co/realizados.html</loc></url>
-<url><loc>https://kromo.com.co/torres.html</loc></url>
-<url><loc>https://kromo.com.co/valderas.html</loc></url>
-<url><loc>https://kromo.com.co/valle.html</loc></url>
-<url><loc>https://kromo.com.co/violeta.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://kromo.com.co/</loc>
+  <lastmod>2022-06-07T17:41:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/index.html</loc>
+  <lastmod>2022-06-07T17:41:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/realizados.html</loc>
+  <lastmod>2022-06-07T17:41:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/proyectos-en-venta.html</loc>
+  <lastmod>2022-06-07T17:41:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/construccion.html</loc>
+  <lastmod>2022-06-07T17:41:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/empresa.html</loc>
+  <lastmod>2022-06-07T17:41:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/contacto.html</loc>
+  <lastmod>2022-06-07T17:41:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/postVenta.html</loc>
+  <lastmod>2022-03-10T16:54:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/comprasExterior.html</loc>
+  <lastmod>2022-06-07T17:41:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/blog.html</loc>
+  <lastmod>2022-03-10T16:41:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/caminos-del-saman-apartamentos-en-candelaria.html</loc>
+  <lastmod>2022-06-07T17:41:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/guayacan-apartamentos-en-popayan.html</loc>
+  <lastmod>2022-06-30T18:28:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/centro-comercial-paseo-de-las-garzas.html</loc>
+  <lastmod>2022-06-07T17:41:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/Azure-apartamentos-en-popayan.html</loc>
+  <lastmod>2022-06-07T17:41:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/comfamar-apartamentos-en-buenaventura.html</loc>
+  <lastmod>2022-06-07T17:41:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/gualanday-casas-en-popayan.html</loc>
+  <lastmod>2022-06-07T17:41:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/benavente-casas-campestres-en-cali.html</loc>
+  <lastmod>2022-07-01T13:33:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/valderas-casas-campestres-en-cali.html</loc>
+  <lastmod>2022-06-07T17:41:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/SAGRILAFT.html</loc>
+  <lastmod>2022-06-07T17:41:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/miradorGarzas.html</loc>
+  <lastmod>2022-06-07T17:41:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/bosque.html</loc>
+  <lastmod>2021-04-29T14:51:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/manantial.html</loc>
+  <lastmod>2021-04-09T22:59:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/torres.html</loc>
+  <lastmod>2021-04-09T22:59:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/parque.html</loc>
+  <lastmod>2021-04-09T22:59:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/gloria.html</loc>
+  <lastmod>2021-04-29T14:53:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/hacienda.html</loc>
+  <lastmod>2021-08-12T20:18:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/violeta.html</loc>
+  <lastmod>2021-04-09T22:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/valle.html</loc>
+  <lastmod>2021-04-09T22:59:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/Azure-construccion.html</loc>
+  <lastmod>2021-10-15T22:41:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/Gualanday-construccion.html</loc>
+  <lastmod>2022-03-10T16:54:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/blogPost/subsidios_vivienda.html</loc>
+  <lastmod>2022-03-10T16:34:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/blogPost/metodos-efectivos-ahorro.html</loc>
+  <lastmod>2022-03-10T16:34:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/blogPost/requisitos-credito-hipotecario.html</loc>
+  <lastmod>2022-03-10T16:34:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/test/index.html</loc>
+  <lastmod>2021-05-12T19:36:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kromo.com.co/assets/pdf/1.Manual_del_SAGRILAFT_KROMO.pdf</loc>
+  <lastmod>2022-06-07T17:24:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
