@@ -139,31 +139,6 @@
     mainClass: 'my-mfp-slide-bottom'
   });
 
-  $('.animsition').animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
-    inDuration: 500,
-    outDuration: 500,
-    linkElement: 'a:not([target="_blank"]):not([href^="#"])',
-    loading: true,
-    loadingParentElement: 'body',
-    //animsition wrapper element
-    loadingClass: 'animsition-loading2',
-    loadingInner: "<div class=\"spinner\">\n        <div class=\"double-bounce1\"></div>\n      <div class=\"double-bounce2\"></div>\n      </div>",
-    timeout: false,
-    timeoutCountdown: 2000,
-    onLoadEvent: true,
-    browser: ['animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay: false,
-    overlayClass: 'animsition-overlay-slide',
-    overlayParentElement: 'body',
-    transition: function transition(url) {
-      window.location.href = url;
-    }
-  });
-
   svg4everybody();
 
   // revolution-slider
