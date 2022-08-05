@@ -67,7 +67,7 @@ const form = () => {
       <input type="radio" class="ml-3" name="terms" /> No
       <br />
       <div class="mt-3 d-flex flex-column contact-block__text">
-        <a href="http://kromo.com.co/PPD.pdf">POLÍTICA DE PROTECCIÓN DE DATOS</a>
+        <a href="http://kromo.com.co/PPD.html">POLÍTICA DE PROTECCIÓN DE DATOS</a>
         <a href="http://kromo.com.co/PGI.pdf">POLÍTICA DE PROTECCIÓN DE GESTIÓN INTEGRAL</a>
       </div>
     </div>
