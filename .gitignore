@@ -5,6 +5,7 @@ img/
 
 pdf/
 media/
+html/
 config.php
 *.zip
 .user.ini
