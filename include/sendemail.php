@@ -157,7 +157,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$mail->AddAddress( $recipient['email'] , $recipient['name'] );
 	}
 	
-	if($submits['cf-proyecto'] == 'Azure') {
+	if($submits['cf-proyecto'] == 'Azure'|| $submits['cf-proyecto'] == 'Lomalinda') {
 		$mail->AddAddress( $recipient['xime'], $recipient['xime_name'] );
 
 
