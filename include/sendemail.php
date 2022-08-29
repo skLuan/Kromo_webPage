@@ -38,6 +38,8 @@ $recipients[] = array(
 	'asesorKromo1_name' => 'Asesor Comercial',
 	'asesorKromo2' => 'asesorcomercial@kromo.com.co',
 	'asesorKromo2_name' => 'Asesor Comercial',
+	'rr_digital' => 'digital@rrcreativos.com',
+	'RR_name' => 'Digital RR',
 	
 		
 );
@@ -174,7 +176,11 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	} else if($submits['cf-proyecto'] == 'Colinas de Comfamar') {
 		$mail->AddAddress( $recipient['mailColinas'] , $recipient['nameColinas'] );
 	} 
-
+	else if ($submits['cf-proyecto'] == 'Guadual de las garzas') {
+		$mail->AddAddress($recipient['rr_digital'], $recipient['RR_name']);
+		$mail->AddAddress($recipient['luz'], $recipient['luz_name']);
+		$mail->AddAddress($recipient['asesorKromo1'], $recipient['asesorKromo1_name']);
+	} 
 
 	else if($submits['cf-proyecto'] == 'Benavente' || $submits['cf-proyecto'] == 'Valderas') {
 		$mail->AddAddress( $recipient['comercial_uno'] , $recipient['comercial_name'] );
