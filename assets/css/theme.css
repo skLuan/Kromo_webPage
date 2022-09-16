@@ -361,6 +361,10 @@ main {
   opacity: 1;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 /*
 BEM styles
 */
