@@ -286,13 +286,14 @@
                             dataType: 'json',
                             success: function(data) {
                                 elResult.html(data.message).fadeIn(500);
+                                // console.log(data.message);
                                 if (data.alert != 'error') {
                                     $(form).clearForm();
                                     setTimeout(function() {
                                         elResult.fadeOut(500);
                                     }, 5000);
                                 };
-                                console.log(data);
+                                // console.log(data);
                             },
                             error: function(e){
                             console.error(e);

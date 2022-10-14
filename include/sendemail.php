@@ -167,14 +167,6 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	} else if($submits['cf-proyecto'] == 'Guayacan' || $submits['cf-proyecto'] == 'Mirador de las garzas') {
 		// $mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
 		// $mail->AddAddress( $recipient['laura'] , $recipient['laura_name'] );
-
-		$data = [
-			"nombre" => $submits["cf-nombre"],
-			"email" => $submits["cf-email"],
-			"tel" => $submits["cf-tel"],
-			"tema" => $submits["cf-tema"],
-			"mensaje" => $submits["cf-message"],
-	];
 		// testing($submits);
 
 	} else if($submits['cf-proyecto'] == 'Caminos del Saman') {
