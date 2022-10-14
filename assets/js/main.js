@@ -271,7 +271,6 @@
     function noli_contactForm() {
         var $contactForm = $('.contact-form');
 
-
         if ($contactForm.length > 0) {
             
             $contactForm.each(function() {
@@ -292,8 +291,11 @@
                                     setTimeout(function() {
                                         elResult.fadeOut(500);
                                     }, 5000);
-                                    console.log(data.message + " entre jiji")
                                 };
+                                console.log(data);
+                            },
+                            error: function(e){
+                            console.error(e);
                             }
                         });
                     }

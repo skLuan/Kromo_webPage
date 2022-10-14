@@ -1,55 +1,44 @@
-
-const form = () => {
-  let element = document.createElement("div");
-
-  const form = `<form class="mt-5 mb-0 contact-block__form" id="cf" name="cf" action="include/sendemail.php" method="post" autocomplete="off">
+<form class="mt-5 mb-0 contact-block__form" id="cf" name="cf" action="include/sendemail.php" method="post" autocomplete="off">
   <div class="form-row">
     <div class="form-process"></div>
 
-    <input id="cf-proyecto" name="cf-proyecto" value=""
-      class="col-12 col-sm-6 contact-block__input-text form-control required d-none" placeholder="Asunto" type="text" />
+    <input id="cf-proyecto" name="cf-proyecto" value="" class="col-12 col-sm-6 contact-block__input-text form-control required d-none" placeholder="Asunto" type="text" />
 
     <div class="col-md-6">
       <div class="form-group">
         <label for="cf-nombre">Nombre</label>
-        <input type="text" id="cf-nombre" name="cf-nombre" placeholder="Coloca tu nombre"
-          class="contact-block__input-text form-control required" />
+        <input type="text" id="cf-nombre" name="cf-nombre" placeholder="Coloca tu nombre" class="contact-block__input-text form-control required" />
       </div>
     </div>
 
     <div class="col-md-6">
       <div class="form-group">
         <label for="cf-email">E-mail</label>
-        <input type="email" id="cf-email" name="cf-email" placeholder="Coloca tu email"
-          class="contact-block__input-text form-control required" />
+        <input type="email" id="cf-email" name="cf-email" placeholder="Coloca tu email" class="contact-block__input-text form-control required" />
       </div>
     </div>
 
     <div class="col-md-6">
       <div class="form-group">
         <label for="cf-tema">Asunto</label>
-        <input type="text" id="cf-tema" name="cf-tema" placeholder="Tema (Opcional)"
-          class="contact-block__input-text form-control" />
+        <input type="text" id="cf-tema" name="cf-tema" placeholder="Tema (Opcional)" class="contact-block__input-text form-control" />
       </div>
     </div>
 
     <div class="col-md-6">
       <div class="form-group">
         <label for="cf-tel">No de teléfono</label>
-        <input type="tel" id="cf-tel" name="cf-tel" placeholder="Teléfono (Opcional)"
-          class="contact-block__input-text form-control" />
+        <input type="tel" id="cf-tel" name="cf-tel" placeholder="Teléfono (Opcional)" class="contact-block__input-text form-control" />
       </div>
     </div>
 
     <div class="mb-4 col-12">
       <div class="form-group">
         <label for="cf-mensaje">Su mensaje</label>
-        <textarea name="cf-message" id="cf-message"
-          placeholder="¡Déjanos tu mensaje y en breve estaremos en contacto contigo!"
-          class="contact-block__input-textarea form-control required" rows="7"></textarea>
+        <textarea name="cf-message" id="cf-message" placeholder="¡Déjanos tu mensaje y en breve estaremos en contacto contigo!" class="contact-block__input-textarea form-control required" rows="7"></textarea>
       </div>
       <!-- clasificador de bot -->
-      <div class="g-recaptcha" data-sitekey="6Lf1t3wiAAAAAIMsL3ghPjh6ymcO4CsC8V4jPLlC" data-action="LOGIN">
+      <div class="g-recaptcha" data-sitekey="6Lf1t3wiAAAAAIMsL3ghPjh6ymcO4CsC8V4jPLlC">
       </div>
       <div id="g-recaptcha-error"></div>
     </div>
@@ -80,8 +69,4 @@ const form = () => {
 
     <input type="hidden" name="prefix" value="cf-" />
   </div>
-</form>`;
-  element.innerHTML = form;
-  return element.firstChild;
-};
-export { form };
+</form>

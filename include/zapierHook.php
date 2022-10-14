@@ -23,8 +23,7 @@ print_r ($response);
 }
 
 function testing($data = []){
-    print_r($data);
+    echo json_encode($data);
 }
-
-print_r($_POST);
+    testing($_POST);
 ?>

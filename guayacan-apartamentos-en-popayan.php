@@ -1,3 +1,7 @@
+<?php
+define('STATICFORM', (realpath(dirname(__FILE__)) . '/src/components/staticForm.php'));
+define('POPFORM', (realpath(dirname(__FILE__)) . '/src/components/popForm.php'));
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -40,11 +44,13 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89322627-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-89322627-3');
     gtag('config', 'AW-386222465');
-
   </script>
 </head>
 
@@ -53,8 +59,7 @@
     <!-- svg sprite-->
     <svg style="width: 0; height: 0; visibility: hidden" xmlns="http://www.w3.org/2000/svg">
       <symbol id="icon_ion-icon-apps" viewBox="0 0 512 512">
-        <path
-          d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z" />
+        <path d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z" />
       </symbol>
     </svg>
   </div>
@@ -65,8 +70,7 @@
       <div class="header__container">
         <div class="header__wrapper container-fluid">
           <div class="header__inner">
-            <a class="logo header__logo" href="index.html"><img src="favicons/kromo-logo.png" alt="Logo"
-                width="50%"></a>
+            <a class="logo header__logo" href="index.html"><img src="favicons/kromo-logo.png" alt="Logo" width="50%"></a>
             <button class="header__menu-button" type="button">
               <span class="header__menu-button-inner"></span>
             </button>
@@ -120,8 +124,7 @@
               </li>
               <li class="top-menu__menu-item">
                 <div class="dropdown">
-                  <a class="dropdown__trigger top-menu__menu-link" href="">Pagos <img src="img/logo-pse.png"
-                      width="35px" alt=""></a>
+                  <a class="dropdown__trigger top-menu__menu-link" href="">Pagos <img src="img/logo-pse.png" width="35px" alt=""></a>
                   <div class="dropdown__menu">
                     <div class="dropdown__column">
                       <div class="dropdown__item">
@@ -129,8 +132,7 @@
                           linea</a>
                       </div>
                       <div class="dropdown__item">
-                        <a class="dropdown__link"
-                          href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">FiduBogotá</a>
+                        <a class="dropdown__link" href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">FiduBogotá</a>
                       </div>
                     </div>
                   </div>
@@ -189,8 +191,7 @@
                 Exterior</a>
             </div>
             <div class="menu-panel__menu-item">
-              <a class="menu-panel__menu-link collapsed" href="#submenu3" data-toggle="collapse">Pagos <img
-                  src="img/logo-pse.png" width="35px" alt=""></a>
+              <a class="menu-panel__menu-link collapsed" href="#submenu3" data-toggle="collapse">Pagos <img src="img/logo-pse.png" width="35px" alt=""></a>
               <div class="menu-panel__menu-list collapse" id="submenu3">
                 <div class="menu-panel__bottom-submenu">
                   <div class="menu-panel__submenu-item">
@@ -198,8 +199,7 @@
                       linea</a>
                   </div>
                   <div class="menu-panel__submenu-item">
-                    <a class="dropdown__link"
-                      href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">FiduBogotá</a>
+                    <a class="dropdown__link" href="https://transacciones.fidubogota.com/Preventas/pagos_pse/aporte_publico.pub">FiduBogotá</a>
                   </div>
                 </div>
               </div>
@@ -207,16 +207,13 @@
           </div>
           <div class="menu-panel__footer">
             <div class="socials menu-panel__socials">
-              <a class="socials__social icofont-instagram" href="https://www.instagram.com/kromoconstructores"
-                target="_blank">
+              <a class="socials__social icofont-instagram" href="https://www.instagram.com/kromoconstructores" target="_blank">
                 <div class="visually-hidden">instagram</div>
               </a>
-              <a class="socials__social icofont-facebook" href="https://www.facebook.com/kromoconstructores"
-                target="_blank">
+              <a class="socials__social icofont-facebook" href="https://www.facebook.com/kromoconstructores" target="_blank">
                 <div class="visually-hidden">facebook</div>
               </a>
-              <a class="socials__social icofont-youtube" href="https://www.youtube.com/watch?v=UZ9xfhHe-Eo"
-                target="_blank">
+              <a class="socials__social icofont-youtube" href="https://www.youtube.com/watch?v=UZ9xfhHe-Eo" target="_blank">
                 <div class="visually-hidden">youtube</div>
               </a>
             </div>
@@ -242,8 +239,7 @@
         <div class="row">
           <div class="col-md-5 col-lg-5">
             <a class="project-block__project" href="#">
-              <span class="project-block__image"><img alt="" class="project-block__image"
-                  src="img/logo _GUAYACAN.png" /></span>
+              <span class="project-block__image"><img alt="" class="project-block__image" src="img/logo _GUAYACAN.png" /></span>
             </a>
           </div>
           <div class="offset-md-1 offset-lg-1 col-md-5 col-lg-5 col-sm-10">
@@ -289,8 +285,7 @@
           </div>
         </div>
         <div class="flex-row row d-flex">
-          <img alt="" class="p-lg-0 pl-lg-5 mb-3 p-3 " src="img/Edge_Logo Hi-ResWeb.jpg" width="100%"
-            style="max-width: 450px;" />
+          <img alt="" class="p-lg-0 pl-lg-5 mb-3 p-3 " src="img/Edge_Logo Hi-ResWeb.jpg" width="100%" style="max-width: 450px;" />
           <div class="pl-3 pr-lg-0 pr-3 pl-lg-5 w-lg-50 w-full">
             <p class="review-slider__text">Contamos con la certificación preiliminar EDGE internacional presente en +120
               paises
@@ -398,8 +393,7 @@
             <hr />
             <div class="masonry__item">
               <a class="listing-block__item" data-filters="Architecture, Industrial Design, 3d Modeling" href="#">
-                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image"
-                    src="img/guayacan/CAM1_compressed.jpg" /></span>
+                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image" src="img/guayacan/CAM1_compressed.jpg" /></span>
                 <span class="listing-block__item-title">Acceso principal</span>
                 <!-- <p class="listing-block__item-category">Con un área construida de 264,19 m2, distribuidos en dos
                   bellas
@@ -412,8 +406,7 @@
             <hr />
             <div class="masonry__item">
               <a class="listing-block__item" data-filters="Architecture, Industrial Design, 3d Modeling" href="#">
-                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image"
-                    src="img/guayacan/CAM2_compressed.jpg" /></span>
+                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image" src="img/guayacan/CAM2_compressed.jpg" /></span>
                 <span class="listing-block__item-title">Cancha de futbol</span>
                 <!-- <p class="listing-block__item-category">Es un espacio amplio y acogedor con gran luminosidad, que
                   cuenta
@@ -428,8 +421,7 @@
             <hr />
             <div class="masonry__item">
               <a class="listing-block__item" data-filters="Architecture, Industrial Design, 3d Modeling" href="#">
-                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image"
-                    src="img/guayacan/CAM3_compressed.jpg" /></span>
+                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image" src="img/guayacan/CAM3_compressed.jpg" /></span>
                 <span class="listing-block__item-title">Parqueaderos</span>
                 <!-- <p class="listing-block__item-category">El baño cuenta con doble ducha y doble lavamanos, detalles que
                   brindar confort al interior del hogar.</p> -->
@@ -438,8 +430,7 @@
             <hr />
             <div class="masonry__item">
               <a class="listing-block__item" data-filters="Architecture, Industrial Design, 3d Modeling" href="#">
-                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image"
-                    src="img/guayacan/GUAYACAN_compressed.jpg" /></span>
+                <span class="listing-block__image-wrapper"><img alt="" class="listing-block__image" src="img/guayacan/GUAYACAN_compressed.jpg" /></span>
                 <span class="listing-block__item-title">Unidad</span>
               </a>
             </div>
@@ -469,6 +460,9 @@
               <div id="cf-up" class="mb-0 heading-group__title">Contáctenos</div>
               <div class="contact-form" id="staticFormContainer" name="Guayacan">
                 <!-- el form se inyecta de forma dinamica -->
+                <?php
+                readfile(STATICFORM);
+                ?>
               </div>
             </div>
 
@@ -490,6 +484,9 @@
       </div>
       <div class="contact-form" id="popFormContainer">
         <!-- el form se inyecta de forma dinamica -->
+        <?php
+        readfile(POPFORM);
+        ?>
       </div>
     </div>
     <!-- ------------------------------------------------------- End Form Pop up -->
@@ -541,16 +538,13 @@
             </div>
             <div class="footer-studio__column col-12 col-sm-6 col-lg-3 offset-lg-3 offset-sm-2">
               <div class="footer-studio__socials">
-                <a class="footer-studio__social icofont-instagram" href="https://www.instagram.com/kromoconstructores"
-                  target="_blank">
+                <a class="footer-studio__social icofont-instagram" href="https://www.instagram.com/kromoconstructores" target="_blank">
                   <div class="visually-hidden">instagram</div>
                 </a>
-                <a class="footer-studio__social icofont-facebook" href="https://www.facebook.com/kromoconstructores"
-                  target="_blank">
+                <a class="footer-studio__social icofont-facebook" href="https://www.facebook.com/kromoconstructores" target="_blank">
                   <div class="visually-hidden">facebook</div>
                 </a>
-                <a class="footer-studio__social icofont-youtube" href="https://www.youtube.com/watch?v=UZ9xfhHe-Eo"
-                  target="_blank">
+                <a class="footer-studio__social icofont-youtube" href="https://www.youtube.com/watch?v=UZ9xfhHe-Eo" target="_blank">
                   <div class="visually-hidden">youtube</div>
                 </a>
                 <a class="footer-studio__social icofont-mail" href="mailto:info@kromo.com.co">

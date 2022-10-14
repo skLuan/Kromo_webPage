@@ -4,7 +4,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
-require_once './zapierHook.php';
 
 // If you intend you use SMTP, uncomment next line
 //require 'phpmailer/src/SMTP.php';
@@ -177,7 +176,6 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			"mensaje" => $submits["cf-message"],
 	];
 		// testing($submits);
-		echo 'atun con pan';	
 
 	} else if($submits['cf-proyecto'] == 'Caminos del Saman') {
 		$mail->AddAddress( $recipient['karol'] , $recipient['karol_name'] );
@@ -249,8 +247,11 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		if( $autores && !empty( $replyto_e ) ) {
 			$send_arEmail = $autoresponder->Send();
 		}
-
-		echo '{ "alert": "success", "message": "' . $message['success'] . '" }';
+		$jsonResponse = json_encode([
+			"alert" => 'success',
+			"message" => $message['success'],
+		]);
+		echo $jsonResponse;
 	else:
 		echo '{ "alert": "error", "message": "' . $message['error'] . '<br><br><strong>Reason:</strong><br>' . $mail->ErrorInfo . '" }';
 	endif;
