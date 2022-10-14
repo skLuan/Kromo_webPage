@@ -50,7 +50,7 @@ const form = () => {
           class="contact-block__input-textarea form-control required" rows="7"></textarea>
       </div>
       <!-- clasificador de bot -->
-      <div class="g-recaptcha" data-sitekey="6LdXy5keAAAAAGwy6BUKmEIgpLgGHdf3W8MFHu7E" data-callback="verifyCaptcha">
+      <div class="g-recaptcha" data-sitekey="6Lf1t3wiAAAAAIMsL3ghPjh6ymcO4CsC8V4jPLlC" data-action="LOGIN">
       </div>
       <div id="g-recaptcha-error"></div>
     </div>

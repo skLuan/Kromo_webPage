@@ -11,3 +11,4 @@ config.php
 .user.ini
 .htaccess
 __MACOSX/
+local/*
