@@ -2,9 +2,9 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
+require_once './zapierHook.php';
 
 // If you intend you use SMTP, uncomment next line
 //require 'phpmailer/src/SMTP.php';
@@ -14,6 +14,8 @@ require 'phpmailer/src/PHPMailer.php';
 $recipients = array();
 
 $recipients[] = array(
+	'emailDebug' => 'erazo.luan@gmail.com',
+	'nameDebug' => 'LuanE',
 	'email' => 'kromocons@gmail.com',
 	'name' => 'Kromo General',
 	'mailColinas' => 'johana.murillo@colinascomfamar.com',
@@ -164,9 +166,18 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 
 	} else if($submits['cf-proyecto'] == 'Guayacan' || $submits['cf-proyecto'] == 'Mirador de las garzas') {
-		$mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
-		$mail->AddAddress( $recipient['laura'] , $recipient['laura_name'] );
+		// $mail->AddAddress( $recipient['xime'] , $recipient['xime_name'] );
+		// $mail->AddAddress( $recipient['laura'] , $recipient['laura_name'] );
 
+		$data = [
+			"nombre" => $submits["cf-nombre"],
+			"email" => $submits["cf-email"],
+			"tel" => $submits["cf-tel"],
+			"tema" => $submits["cf-tema"],
+			"mensaje" => $submits["cf-message"],
+	];
+		// testing($submits);
+		echo 'atun con pan';	
 
 	} else if($submits['cf-proyecto'] == 'Caminos del Saman') {
 		$mail->AddAddress( $recipient['karol'] , $recipient['karol_name'] );

@@ -3,7 +3,7 @@ const form = () => {
   let element = document.createElement("div");
 
   const form = `<form class="mt-5 mb-0 contact-block__form" id="cf" name="cf" action="include/sendemail.php" method="post"
-  onsubmit="return submitUserForm();" autocomplete="off">
+  onsubmit="submitUserForm();" autocomplete="off">
   <div class="form-row">
     <div class="form-process"></div>
 
